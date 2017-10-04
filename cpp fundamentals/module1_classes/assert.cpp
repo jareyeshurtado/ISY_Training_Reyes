@@ -3,20 +3,20 @@
 #include <assert.h>     /* assert */
 
 void print_number(int* myInt) {
-  assert (myInt!=NULL);
-  printf ("%d\n",*myInt);
+  	assert (myInt!=NULL);
+  	printf ("%d\n",*myInt);
 }
 
 int main ()
 {
-  int a=10;
-  int * b = NULL;
-  int * c = NULL;
+	int a=10;
+	int * b = NULL;
+	int * c = NULL;
 
-  b=&a;
-  assert(0);
-  print_number (b);
-  //print_number (c);
+	b=&a;
+	assert(0);
+	print_number (b);
+	//print_number (c);
 
-  return 0;
+	return 0;
 }
